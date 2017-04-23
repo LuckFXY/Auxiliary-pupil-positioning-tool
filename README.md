@@ -1,11 +1,20 @@
 # Auxiliary-pupil-positioning-tool
-##安装 ：
-* anaconda3 
-* 用python执行 assist_tool_1.py
-##步骤：
+## 更新
+
+4.23重要更新 
+
+**  加入粗略的预定位功能 **
+	数据库文件名化简
+	批量导出修改后的图片
+	
+## 安装 ：
+* anaconda3  python3.5
+* 用python执行 Auxiliary-pupil-positioning-tool 2.5
+
+## 步骤：
 * 第一步：菜单栏open-folder
 * 第二步：用鼠标进行标记
-##快捷按键：
+## 快捷按键：
 微调
 
 	上下左右：w,s,a,f
@@ -15,7 +24,7 @@
 
 	第一次space 从编辑内圆切换至外圆
 	第二次space 保存并跳转到下一张图片
-##输出：
+## 输出：
 mydata.db 
 	
 	数据库文件，保存用户数据，程序默认调用同目录下的数据库，没有则新建
