@@ -448,18 +448,15 @@ class MainWindow:
         return box
             
     def outputpic(self):
-        dataDB=self.myio.pickallDB()
+        #dataDB=self.myio.pickallDB()
         #name_set=set(names)
-
-        index=0
-        LENGTH_dataDB=len(dataDB)
+        #LENGTH_dataDB=len(dataDB)
         for filename in self.myio.filelist:
             
             #--------------draw a circle-------  
             pic_name=os.path.split(filename)[-1]
-            pic_info_DB=dataDB[index]
-            if pic_name != pic_info_DB[0]:
-                index+=1
+            pic_info_DB=self.myio.pickoneDB(pic_name)
+            if None == pic_info_DB:
                 continue
             self.img_org=Image.open(filename)
             idraw=ImageDraw.Draw(self.img_org)
@@ -480,10 +477,7 @@ class MainWindow:
             outputname='output_image/'+os.path.split(pic_info_DB[0])[-1]
             print(outputname)
             self.img_org.save(outputname)
-            index+=1
-            if index==LENGTH_dataDB:
-                print('output pictures over')
-                break
+
             #----------------------------------
     def AlterDBFName(self):
         self.myio.alterAllFNameDB()
