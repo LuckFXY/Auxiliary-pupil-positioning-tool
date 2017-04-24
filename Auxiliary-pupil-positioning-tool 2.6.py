@@ -555,7 +555,7 @@ class MainWindow:
         self.label_filename.pack()  
         #-------------control button
         Label(frame_right_1,
-              text="For free\nProvied by fxy ($_$)").pack()
+              text="For free\nProvided by fxy ($_$)").pack()
         Button(frame_right_2,image=leftICO,
                command=self.processLButton).pack(side=LEFT)
         Button(frame_right_2,image=rightICO,
