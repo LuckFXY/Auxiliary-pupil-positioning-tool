@@ -3,15 +3,18 @@
 
 4.23重要更新 
 
-**  加入粗略的预定位功能 **
-	数据库文件名化简
-	批量导出修改后的图片
+* 加入粗略的预定位功能 
+* 数据库文件名化简
+* 批量导出修改后的图片
 	
 ## 安装 ：
 * anaconda3  python3.5（至少是python3）
 * 用python执行 Auxiliary-pupil-positioning-tool 2.5
+
   a) cd 脚本所在目录
+  
   b) python Auxiliary-pupil-positioning-tool 2.5
+  
 ## 步骤：
 
 	* 利用数据库存储信息，用户可以在任何时候
