@@ -8,17 +8,28 @@
 	批量导出修改后的图片
 	
 ## 安装 ：
-* anaconda3  python3.5
+* anaconda3  python3.5（至少是python3）
 * 用python执行 Auxiliary-pupil-positioning-tool 2.5
-
+  a) cd 脚本所在目录
+  b) python Auxiliary-pupil-positioning-tool 2.5
 ## 步骤：
-* 第一步：菜单栏open-folder
-* 第二步：用鼠标进行标记
+
+	* 利用数据库存储信息，用户可以在任何时候
+	   开始标记，修正以前的图片，关闭程序
+	* 左右翻页不会修改数据库，保存会更新数据库
+	* 在编辑外圆时，空格会保存并翻页
+
+1. 菜单栏open-folder 打开图片所在根目录
+2. 用鼠标进行从**左上角向后下角**拖动，画圆以标记 （**先内圆再外圆**）
+3. 空格下一步
+	
+
+
 ## 快捷按键：
 微调
 
 	上下左右：w,s,a,f
-	大小 q,e
+	大小 q,e 每次增幅为2像素,**要求鼠标画圆时，园的半径为偶数**
 	
 对于一副新图，先编辑内圆	
 
@@ -31,8 +42,8 @@ mydata.db
 	
 data.csv
 
-	程序手动导出文件，
-	1. 菜单栏open-sqlit3 db 或者 open-folder 
+	程序手动导出文件:
+	1. 菜单栏open-folder 
 	2. 菜单栏 output-csv file
 	
 output_image
